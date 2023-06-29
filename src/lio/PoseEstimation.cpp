@@ -510,7 +510,7 @@ void process(){
       }
       sensor_msgs::PointCloud2 laserCloudMsg;
       pcl::toROSMsg(*laserCloudAfterEstimate, laserCloudMsg);
-      laserCloudMsg.header.frame_id = "/world";
+      laserCloudMsg.header.frame_id = "world";
       laserCloudMsg.header.stamp.fromSec(lidar_list->front().timeStamp);
       pubFullLaserCloud.publish(laserCloudMsg);
 
