@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8.3)
 project(lio_livox)
 
 SET(CMAKE_BUILD_TYPE "Release")
-set(CMAKE_CXX_FLAGS "-std=c++14")
+set(CMAKE_CXX_FLAGS "-std=c++20")
 
 #SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
 SET(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
@@ -18,7 +18,7 @@ find_package(catkin REQUIRED COMPONENTS
   	     tf
   	     tf_conversions
   	     rosbag
-  	     livox_ros_driver
+  	     livox_ros_driver2
   	     eigen_conversions
   	     pcl_conversions
   	     pcl_ros
