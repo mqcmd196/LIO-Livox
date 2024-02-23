@@ -23,7 +23,8 @@ find_package(catkin REQUIRED COMPONENTS
   	     pcl_conversions
   	     pcl_ros
   	     message_filters
-  	     std_srvs)
+  	     std_srvs
+  	     visualization_msgs)
 
 find_package(Eigen3 REQUIRED)
 find_package(PCL REQUIRED)
