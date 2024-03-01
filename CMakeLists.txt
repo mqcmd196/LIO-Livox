@@ -65,5 +65,5 @@ add_executable (PoseEstimation
 		src/lio/Map_Manager.cpp)
 target_link_libraries(PoseEstimation ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${CERES_LIBRARIES})
 
-
-
+install(TARGETS ScanRegistration PoseEstimation
+        RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
