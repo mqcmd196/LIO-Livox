@@ -1185,7 +1185,7 @@ void Estimator::Estimate(std::list<LidarFrame>& lidarFrameList,
     options.trust_region_strategy_type = ceres::DOGLEG;
     options.max_num_iterations = 10;
     options.minimizer_progress_to_stdout = false;
-    options.num_threads = 6;
+    options.num_threads = 4;
     ceres::Solver::Summary summary;
     ceres::Solve(options, &problem, &summary);
 

@@ -306,7 +306,7 @@ bool TryMAPInitialization() {
   ceres::Solver::Options options;
   options.minimizer_progress_to_stdout = false;
   options.linear_solver_type = ceres::DENSE_QR;
-  options.num_threads = 6;
+  options.num_threads = 4;
   ceres::Solver::Summary summary;
   ceres::Solve(options, &problem, &summary);
 
